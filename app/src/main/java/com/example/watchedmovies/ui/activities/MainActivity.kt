@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.watchedmovies.data.model.MovieViewModel
+import com.example.watchedmovies.ui.viewmodels.MovieViewModel
 import com.example.watchedmovies.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         movieSearchButton.setOnClickListener{
             val textToSearch = movieSearchEditText.text
             movieViewModel.fetchMovie(textToSearch)
-
         }
     }
 }

@@ -1,7 +1,8 @@
-package com.example.watchedmovies.data.model
+package com.example.watchedmovies.ui.viewmodels
 
 import android.text.Editable
 import android.util.Log
+import com.example.watchedmovies.data.model.Movie
 import com.example.watchedmovies.data.remote.omdb.OmdbClient
 import com.example.watchedmovies.data.remote.omdb.OmdbClient.Companion.API_KEY
 import retrofit2.Call
